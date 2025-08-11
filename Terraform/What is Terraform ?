@@ -1,0 +1,9 @@
+Terraform : 
+Terraform is an open-source infrastructure as code (IaC) tool used to provision and manage cloud infrastructure. 
+Developed by HashiCorp, it allows you to define and manage your infrastructure resources (like virtual machines, networks, and databases) in configuration files. 
+Terraform then uses these files to create, update, and delete resources across various cloud providers, such as AWS, Azure, and Google Cloud, as well as on-premise environments.
+Terraform Workflow: 
+The typical workflow involves three main steps:
+Write: You define your infrastructure in .tf files using HCL.
+Plan: You run terraform plan to see what changes Terraform will make to your infrastructure before it actually applies them. This gives you a chance to review and confirm the planned actions.
+Apply: You run terraform apply to execute the changes defined in the plan and provision the resources.
