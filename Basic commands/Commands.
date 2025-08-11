@@ -1,0 +1,17 @@
+ls - To see the list of files, dorectories we created. <br>
+Touch - To create the File. <br>
+mkdir - To create the directory. <br>
+cd - To change the directory. <br>
+cd .. - To come out from directory. <br>
+mv - To move any file from one place to another (ex: to the directory). <br>
+cp - To copy any file from one place to another (ex: to the directory). <br>
+rm - To remove or delete the file. <br>
+rm - rf directory_name - To delete the directory. <br>
+Cat file_name - To print the file
+Cat >> file_name - To write teh data in the file. <br>
+vim script_file_name.sh - To create teh shell script. <br>
+"esc and i " - To insert or write the commands in shell. <br>
+:wq! - To come out from Shell. <br>
+sh script_file_name.sh - To execute the commands in Shell. <br>
+
+  
