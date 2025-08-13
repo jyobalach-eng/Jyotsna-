@@ -34,18 +34,24 @@ Command:
 
 terraform init
 
-STEP 6 - Now view the plan
+STEP 6 - Now view the version to see what version is terraform
+
+Command:
+
+terraform version
+
+STEP 7 - Now view the plan
 
 Command:
 
 terraform plan
 
-STEP 7 - Now apply the terraform 
+STEP 8 - Now apply the terraform 
 
 Command:
 
 terraform apply
 
-Step 8 - Now destroy (if applicable)
+Step 9 - Now destroy (if applicable)
 
 terraform destroy
