@@ -40,12 +40,12 @@ Command:
 
 terraform plan
 
-STEP 6 - Now apply the terraform 
+STEP 7 - Now apply the terraform 
 
 Command:
 
 terraform apply
 
-Step 6 - Now destroy (if applicable)
+Step 8 - Now destroy (if applicable)
 
 terraform destroy
