@@ -20,12 +20,11 @@ Script:
  
 provider "aws" {
         profile = "default"
-        region = "us-east-1" ---- " Select region in which you want to create instance"
+        region = "us-east-1"
 }
-resource "aws_instance" "Organisation" {
-  count 2 ---- "To create multiple instances"
-        ami = "ami-0d86c69530d0a048e" ---- "copy the ami id from the instance"
-        instance_type = "t3.micro"
+resource "aws_instance" "organization" {
+        ami = "ami-0d86c69530d0a048e"
+        instance_type = "t2.micro"
 }
 
 STEP 5 - Come out of shell and initiate the terraform
