@@ -24,7 +24,7 @@ provider "aws" {
 }
 resource "aws_instance" "organization" {
         ami = "ami-0d86c69530d0a048e"
-        instance_type = "t2.micro"
+        instance_type = "t3.micro"
 }
 
 STEP 5 - Come out of shell and initiate the terraform
