@@ -1,0 +1,51 @@
+Step 1 - Install terraform
+
+Command:
+
+--> wget -O - https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+--> echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(grep -oP '(?<=UBUNTU_CODENAME=).*' /etc/os-release || lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+--> sudo apt update && sudo apt install terraform.
+
+STEP 2 - Now install and configure AWS and provide the Access key ID and secret access key ID which will be available in security options in AWs account.
+
+STEP 3 - Now create shell using .tf extension
+
+Command: 
+
+vim main.tf
+
+STEP 4 - Now write the script to create EC2 instances.
+
+Script:
+ 
+provider "aws" {
+        profile = "default"
+        region = "us-east-1" ---- " Select region in which you want to create instance"
+}
+resource "aws_instance" "Organisation" {
+  count 2 ---- "To create multiple instances"
+        ami = "ami-0d86c69530d0a048e" ---- "copy the ami id from the instance"
+        instance_type = "t3.micro"
+}
+
+STEP 5 - Come out of shell and initiate the terraform
+
+Command:
+
+terraform init
+
+STEP 6 - Now view the plan
+
+Command:
+
+terraform plan
+
+STEP 6 - Now apply the terraform 
+
+Command:
+
+terraform apply
+
+Step 6 - Now destroy (if applicable)
+
+terraform destroy
